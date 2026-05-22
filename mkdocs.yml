@@ -1,0 +1,61 @@
+site_name: TSO Reference
+site_description: Reference for the Trident Slime Ops Godot prototypes, Assembly build, and team design vault
+site_url: ""
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - Quickstart: 00-Quickstart.md
+  - Combat System Addon: 01-Combat-System-Addon.md
+  - Unit Hierarchy: 02-Unit-Hierarchy.md
+  - Spawn and Wave System: 03-Spawn-and-Wave-System.md
+  - Stage Loop: 04-Stage-Loop.md
+  - Animation Relay: 05-Animation-Relay.md
+  - Overworld Map: 06-Overworld-Map.md
+  - Stage Data Format: 07-Stage-Data-Format.md
+  - Scene Loading Architecture: 08-Scene-Loading-Architecture.md
+  - Progression System: 09-Progression-System.md
+  - External Study GAY-DLE: 10-External-Study-GAYDLE.md
+  - Trident Slime Ops Assembly: 11-Assembly.md
+  - Team Vault Production Notes: 12-Vault-Production-Notes.md
+  - Team Vault World Map Layouts: 13-Vault-World-Map-Layouts.md
+  - Carry-Forward Tiers: 14-Carry-Forward-Tiers.md
+  - Known Bugs Catalog: 15-Known-Bugs-Catalog.md
+  - Glossary: 16-Glossary.md
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - codehilite
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
