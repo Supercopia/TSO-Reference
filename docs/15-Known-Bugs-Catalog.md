@@ -126,7 +126,7 @@ These persist in proto-2 only — proto-1's rewrite fixed them, but they're stil
 | # | Location | Sev | Description | Chapter |
 |---|---|---|---|---|
 | 62 | `dafans-main/character_slots_container.gd:84-85` | Bug | Slot-button label uses `CHARACTER.find_key((row_index * 5) + slot_index).capitalize()` — hardcodes a 5-column grid. Silently breaks on resize. | [External Study — GAY-DLE](10-External-Study-GAYDLE.md) |
-| 63 | `dafans-main/.godot/` | Hygiene | 41 MB / 348 files of editor cache committed. Repo's `.gitignore` predates Godot 4 (lists `.import/`, not `.godot/`). | [External Study — GAY-DLE](10-External-Study-GAYDLE.md) |
+| 63 | `dafans-main/.godot/` | Hygiene | 41 MB / 348 files of editor cache committed. `dafans-main`'s own `.gitignore` predates Godot 4 (lists `.import/`, not `.godot/`). | [External Study — GAY-DLE](10-External-Study-GAYDLE.md) |
 
 ## Cross-cutting / documentation
 

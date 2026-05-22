@@ -275,7 +275,7 @@ Pattern is portable — TSO has no boss code today; this is the model for one.
 
 ### Hygiene notes
 
-- **`.godot/` cache committed.** 41 MB across 348 files. The repo's root `.gitignore` predates Godot 4 (lists `.import/`, not `.godot/`). Optional fix: `git rm -r --cached td-like-game-study/dafans-main/.godot` + add `.godot/` and `*.tmp` to `.gitignore`. Or do nothing — the cache is in a vendored sub-project; not a hot path.
+- **`.godot/` cache committed.** 41 MB across 348 files. `dafans-main`'s own `.gitignore` predates Godot 4 — it lists `.import/`, `.mono/`, `data_*/` (Godot 3 conventions) but not `.godot/`. (Every TSO prototype's `.gitignore`, by contrast, correctly lists `.godot/`.) Optional fix: `git rm -r --cached td-like-game-study/dafans-main/.godot` + add `.godot/` and `*.tmp` to `dafans-main/.gitignore`. Or do nothing — the cache is in a vendored sub-project; not a hot path.
 - **8 `*.tmp` editor scratch files** across `Instances/` and `Scenes/`. Same fix.
 
 ## Where it lives
